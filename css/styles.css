@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;  /* Inmoviliza el encabezado */
+    background-color: #353a40;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 16px 10px;
+    z-index: 10;
+}
+
+header.abajo {
+    background-color: #7e7e7e;
+    padding: 12px 20px;
+}
+
+header .logo {
+    position: relative;
+    color: white;
+    font-size: 2em;
+    letter-spacing: 2px;
+    display: flexbox;
+    transition: 1.2s;
+    margin: 20px 200px 22px 0px;
+    text-decoration: none;
+}
+
+/* las opciones de lista al medio de la altura de la barra */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+header ul li {
+   list-style: none;
+}
+
+/* lista */
+header ul li a {
+    position: relative;
+    font-family: 'Calibri', 'Trebuchet MS', 'sans-serif';
+    font-size: 120%;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(160, 160, 160);
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+/* Cuando pase el mouse sobre la lista */
+header ul li a:hover {
+    color: white;
+}
+
+/* Opcion "Comprar tickets" color verde */
+header .comp-ticket {
+    color: #299E47;
+}
+
+
+/* Estilos para la caja dentro de la zona1 */
+#zona1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/hawaii.png);
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    justify-content: flex-end; /* Coloca la caja a la derecha */
+    align-items: flex-end; /* Coloca la caja en la parte inferior de la pantalla */
+}
+
+header.abajo .logo,
+header.abajo ul li a {
+    color: white;
+}
+
+header.abajo .logo,
+header.abajo ul li a:hover {
+    color: #f5ca49;
+}
+
+/* caja de descripcion, dentro de la zona1 */
+.caja {
+    background-color: transparent; /* Fondo completamente transparente */
+    padding: 50px;
+    margin: 0px 74px 90px 0px;
+    text-align: center;
+    border-radius: 5px;
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 18cm; /* Ancho fijo de 16 cm */
+    max-width: 100%; /* Asegura que no se desborde en pantallas pequeñas */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    text-align: right;
+}
+
+.caja h3 {
+    color: white;
+    font: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: right;  /* Alinea el texto del párrafo a la derecha */
+}
+
+.caja p {
+    color: white;
+    font: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: right;  /* Alinea el texto del párrafo a la derecha */
+}
+
+/* Estilos para los botones de la caja de descripcion*/
+.boton-transparente {
+    background-color: transparent;
+    text-decoration: none;    /* saca el subrrayado del texto dentro del boton */
+    color: white;
+    border: 0.8px solid white;
+    padding: 6px 12px;
+    margin-right: 4mm;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.3s;
+}
+
+.boton-verde {
+    background-color: #1ab40c;
+    text-decoration: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: right;
+    justify-items: right;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.3s;
+}
+
+/* Efecto de cambio de color al pasar el cursor sobre los botones */
+.boton-transparente:hover {
+    background-color: white;
+    color: #333;
+}
+
+.boton-verde:hover {
+    background-color: #383837;
+    color: white;
+}
+
+/* ********************************* */
+/* Texto de CONOCE A LOS */
+.conocealos {
+    text-align: center;
+    opacity: 0.8;
+    margin: 20px 0px 0px 0px;
+    padding: 12px 6px 2px 6px;
+}
+
+/* Texto de ORADORES */
+#oradores h2 {
+    text-align: center;
+    font-size:xx-large;
+    padding: 0px 3px 4px 3px;
+}
+
+/*  *********************** */
+/* Estilos para botones debajo de los 3 ORADORES */
+.custom-btn {
+    font-weight: bold;
+    padding: 0.6px 10px; /* Ajusta el padding para hacer los botones más pequeños */
+    font-size: 12px; /* Ajusta el tamaño de la fuente */
+}
+.custom-btn-gray {
+    background-color: gray;
+    color: white;
+}
+.custom-btn-red {
+    background-color: red;
+    color: white;
+}
+.right-content {
+    background-color: #333; /* Fondo gris oscuro */
+    color: white;
+    padding: 20px;
+}
+.right-content img,
+.right-content p {
+    margin-bottom: 0; /* Elimina la separacion debajo de la imagen y el párrafo */
+}
+
+/* ******************************* */
+/* Lugar y fecha: texto a la derecha de Honolulu */
+#lugaryfecha {
+    /* border: 1px solid black; */
+    background: #ccc;
+   /* padding: 20px; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 100%;
+    height: 560px;
+    margin: 0 auto;
+}
+
+.imagenes {
+    background-color: white;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 500px;
+    height: 560px;
+    text-align: left;
+}
+
+/* Estilo para los botones con fondo celeste oscuro*/
+.btn.btn-info {
+    background-color: rgb(98, 169, 169);
+    border-color: rgb(98, 169, 169);
+    color: white;
+    margin-right: 2px; /* Agrega el margen derecho de 2 mm entre los botones */
+}
+
+/* Dato de las 2 cajas: Honolulu y Lugar de la conferencia */
+/* caja 1 Honolulu */
+.ci1 {
+    background: url(../img/honolulu.jpg);
+    background-size: cover;
+    background-position: center center;
+    flex-basis: 50%
+}
+
+/* caja 2 de descripcion (a la derecha de Honolulu */
+.ci2 {
+    flex-basis: 50%; 
+    background-color: rgb(53, 58, 64);   
+    color:#ccc
+
+}
+
+/* Titulo de la caja a la derecha de Honolulu */
+.lugar {
+    font-weight: bold;
+    margin: 12px;
+    font-size: 30px;
+}
+
+/* Descripcion de la caja a la derecha de Honolulu */
+.descripcion {
+    line-height: 1.5;
+    margin: 12px;
+    padding: 20px 0px 10px 0px;
+    font-size: 16px;
+}
+
+/* Estilo para el botón transparente de la caja a la derecha de Honolulu*/
+.boton-conocemas {
+    background-color: transparent; /* Fondo transparente */
+    color: white; /* Texto blanco */
+    border: 1px solid white; /* Borde blanco de 1 píxel */
+    padding: 6px 16px; /* Ajusta el relleno (padding) según tus preferencias */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    border-radius: 5px;
+    margin-left: 4mm;
+    transition: background-color 0.2s, color 0.3s; /* Efecto de transición suave */
+} 
+
+/* Cambia el color de fondo y del texto al pasar el cursor sobre el botón */
+.boton-conocemas:hover {
+    background-color: white; /* Fondo blanco al pasar el cursor */
+    color: #333; /* Texto en color oscuro al pasar el cursor */
+    /*width: 50%; Esto hace agrandar el boton*/
+}
+
+
+/* ********************************* */
+/* Texto de CONVIERTE EN UN*/
+.convierteteenun {
+    text-align: center;
+    opacity: 0.8;
+    margin: 12px 0px 0px 0px;
+    padding: 12px 6px 2px 6px;
+}
+
+/* Texto de ORADORES */
+#convierteteorador h2 {
+    text-align: center;
+    font-size:xx-large;
+    padding: 0px 3px 4px 3px;
+}
+
+/* Anotate: texto fuera del formulario */
+.anotate {
+    text-align: center;
+}
+
+/* Parrafo fuera del formulario medio transparente */
+form .recuerdaTitulo  {
+    opacity: 0.7;
+}
+
+
+/* Estilo personalizado para el botón verde claro de enviar */
+.custom-btn-green {
+    background-color: #96c93d; /* Puedes ajustar este color según tus preferencias */
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+/* Estilos para las cajas en el footer */
+.footer-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px; /* Espacio superior entre las cajas y el texto */
+    background-color: #1E4258;
+    /*background-color: yellow; /*este color lo use para probar*/
+    color: white;
+    font-size: 100%;
+}
+
+.footer-box {
+    width: 100px;
+    height: 70px;
+    background-color: #1E4258;
+    margin: 10px 16px 0px 16px; /* Espacio entre las cajas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Define la animación @keyframes
+@keyframes desplazamientoDerecha {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+} */
+
+
+/* Aplica la animación al elemento <p class="copying"> */
+.copying {
+    background-color: #1E4258;
+    color: grey;
+    text-align: center;
+    padding: 6px 0;
+   /* animation: desplazamientoDerecha 18s ease-in-out 0.5s infinite; /* Configuracion de la animación */
+}
+
+/* Query media */
+/* Para pantallas maximo de 1368 pixel */
+@media (max-width: 1368px) {
+    header ul li a {
+        font-size: 100%;
+        margin: 0 10px;
+    }
+
+    header .logo{
+        font-weight: normal;
+        font-size: 1.5em;
+        letter-spacing: 1px;
+    } 
+    
+    nav ul li a {
+        font-weight: normal;
+        font-size: 1.2em;
+        letter-spacing: 0.8px;
+    }
+}
+
+/* Para pantallas maximo de 1160 pixel */
+@media (max-width: 1160px) {
+    header ul li a {
+        font-size: 70%; /* ARREGLAR*/
+        letter-spacing: 0.8;
+        margin: 0 10px;
+    }
+
+    header .logo{
+        font-weight: normal;
+        font-size: 1.3em;
+        letter-spacing: 0.6px;
+    } 
+    
+    nav ul li a {
+        font-weight: normal;
+        font-size: 1em;
+        letter-spacing: 0.8px;
+    }
+
+    header img {
+        width: 100px;
+        height: 50px;
+    }
+}
+
+/* Para pantallas maximo de 995 pixel */
+@media (max-width: 995px) {
+    header .logo{
+        font-weight: normal;
+        font-size: 1.5em;
+        letter-spacing: 1px;
+    } 
+    
+    nav ul li a {
+        font-weight: normal;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+    }
+
+    .imagen-superpuesta {
+        height: 50%;
+    }
+}
+
+/* Para pantallas maximo de 858 pixel */
+@media (max-width: 858px) {
+    header img {
+        display: none;
+    }
+
+    header .logo {
+        font-size: 1em;
+        font-weight: 100;
+        letter-spacing: 0.8px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+        font-weight: 100;
+        letter-spacing: 0.8px;
+    }
+}
+
+/* Para pantallas maximo de 647 pixel */
+@media (max-width: 647px) {
+    header .logo {
+        font-size: 1em;
+        letter-spacing: 0.6px;
+    }
+
+    nav ul li a {
+        font-size: 0.7em;
+        letter-spacing: 0.6px;
+      } 
+
+    .footer-box {
+        width: 100%;
+        height: 50px;
+        margin: 8px 10px 0px 10px; /* Espacio entre las cajas */
+        font-size: small;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .copying {
+        font-size: 70%;
+        padding: 6px 0;
+       /* animation: desplazamientoDerecha 18s ease-in-out 0.5s infinite; /* Configuracion de la animación */
+    }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="shortcut icon" type="Imagen" href="./img/buenosaires.png">
+	<title>Conf Bs As</title>
+</head>
+
+<body>
+	<!-------- BARRA DE NAVEGACION ---------->
+	<header>
+		<img class="img-logo" src="./img/codoacodo.png" alt="CodoACodo" width="140px" height="90px">
+		<a href="#" class="logo">Conf Bs As</a>
+		<nav>
+			<ul>
+				<li><a class="active" href="#">La Conferencia</a></li>
+				<li><a href="#oradores">Los oradores</a></li>
+				<li><a href="#lugaryfecha">El lugar y la fecha</a></li>
+				<li><a href="#convierteteorador">Conviertete en orador</a></li>
+				<li><a href="compra-ticket.html" class="comp-ticket" target="_parent">Comprar tickets</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!--------- ZONA1 ES LA PARTE CENTRAL DE LA PANTALLA --------->
+	<section id="zona1">
+		<div class="caja">
+			<h3>Conf Bs As</h3>
+			<p>Bs As llega por primera vez a Argentina. Un evento para compartir con
+				nuestra comunidad el conocimiento y experiencia de los expertos que
+				estan creando el futuro de internet. Ven a conocer a miembros del 
+				evento, a otros estudiantes de Codo a Codo y los oradores del primer
+				nivel que tenemos para ti. Te esperamos!
+			</p>
+			<a href="#convierteteorador" class="boton-transparente" title="Podes cargar tus datos para ser orador!!!">Quiero ser orador</a>
+			<a href="compra-ticket.html" class="boton-verde" target="_blank" title="Podes compra tu ticket para asistir al evento."> Comprar tickets </a>
+		</div>
+	</section>
+	
+
+	<!-- JavaScript donde se captura la parte de arriba de la pagina: header-->
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("abajo", window.scrollY>0);
+    	})
+	</script>
+
+	<!--------- Solo el texto de los oradores-------------->
+	<section id="oradores">
+		<p class="conocealos">CONOCE A LOS</p>
+		<h2>ORADORES</h2>
+	</section>
+
+	<!-------------- Cajas de las fotos y texto de los oradores------------------>
+	<div class="container">
+        <div class="row">
+            <!-- Caja 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/steve.jpg" class="card-img-top" alt="Steve Jobs">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-warning text-dark custom-btn">JavaScript</button>
+                        <button type="button" class="btn btn-info custom-btn">React</button>
+                        <h5 class="card-title">Steve Jobs</h5>
+                        <p class="card-text">Steve Jobs, nacido el 24 de febrero de 1955 en San Francisco, California, fue un influyente empresario y visionario tecnológico estadounidense. 
+							Es cofundador de Apple Inc., una de las compañías más exitosas del mundo. Jobs apoyó un papel fundamental en la creación de productos revolucionarios como el 
+							iPhone, el iPod, el iPad y las computadoras Macintosh. Su enfoque en el diseño elegante y la experiencia del usuario transformó la industria de la tecnología y 
+							cambió la forma en que interactuamos con la informática y la comunicación. Su legado perdura como un ícono de la innovación y el espíritu empresarial. Falleció 
+							el 5 de octubre de 2011, dejando una huella imborrable en la tecnología y la cultura contemporáneas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caja 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/bill.jpg" class="card-img-top" alt="Bill Gates">
+					<div class="card-body">
+                        <button type="button" class="btn btn-warning text-dark custom-btn">JavaScript</button>
+                        <button type="button" class="btn btn-info custom-btn">React</button>
+                        <h5 class="card-title">Bill Gates</h5>
+                        <p class="card-text">Bill Gates, nacido el 28 de octubre de 1955 en Seattle, Washington, es un influyente empresario y filántropo estadounidense. Cofundador de Microsoft 
+							en 1975, su liderazgo revolucionó la informática con el sistema operativo Windows, convirtiendo a Microsoft en un gigante tecnológico. Bill Gates es ampliamente reconocido 
+							por su riqueza y por la Fundación Bill y Melinda Gates, que desde 2000 ha impactado globalmente en salud, educación y desarrollo, mejorando la vida de millones de personas. 
+							Su visión y contribuciones tecnológicas dejarán una huella muy marcada y duradera en la industria informática y el mundo entero, inspirando a generaciones a explorar la 
+							innovación y el cambio positivo en beneficio de la humanidad.</p>
+					</div>	
+                </div>
+            </div>
+
+            <!-- Caja 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
+                    <div class="card-body">
+                        <button type="button" class="btn custom-btn custom-btn-gray">Negocios</button>
+                        <button type="button" class="btn custom-btn custom-btn-red">Startups</button>
+                        <h5 class="card-title">Ada Lovelace</h5>
+                        <p class="card-text">Ada Lovelace, nacida el 10 de diciembre de 1815 en Londres, fue una visionaria matemática y escritora británica. Considerada la primera programadora de 
+							computadoras, colaboró ​​con Charles Babbage en el "motor analítico". Su legado trasciende las máquinas, anticipando la programación moderna y la inteligencia artificial. 
+							Inspiró a futuras generaciones a explorar la intersección entre la ciencia y la creatividad, sentando las bases para la revolución tecnológica actual. Su visión innovadora 
+							y pasión por la informática abrieron nuevos horizontes, resaltando la importancia de las mujeres en la informática y el papel fundamental de la imaginación en el progreso 
+							tecnológico. Hoy sigue siendo un faro de inspiración en el mundo de la ciencia y la tecnología.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<br><br>
+
+	<!-------- IMAGEN DE HONOLULU Y TEXTO ALUSIVO AL LUGAR --------->
+	<section id="lugaryfecha">
+		<div class="imagenes ci1">
+			<!-- Queria poner aca la imagen de Honolulu, pero me sale grande, asi que la puse en el CSS-->
+		</div>
+		<div class="imagenes ci2">
+			<p class="lugar">Bs As - Octubre</p>
+			<p class="descripcion">
+				Buenos Aires es la provincia y localidad mas grande del estado de Argentina,
+				en los Estado Unidos, Honolulu es la más sureña de entre las principales ciudades
+				estadounidenses. Aunque el nombre de Honolulu se refiere al area urbana en la costa
+				sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una
+				ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).
+			</p>
+			<button class="boton-conocemas">Conocé más</button>
+		</div>
+	</section>
+	
+	<!------- Solo el texto de los CONVIERTE EN ORADOR ---------->
+	<section id="convierteteorador">
+		<p class="convierteteenun">CONVIÉRTETE EN UN</p>
+		<h2>ORADOR</h2>
+		<p class="anotate">Anótate como orador para dar una <abbr title="attribute">charla ignite</abbr>. Cúentanos de qué quieres hablar!</p>
+	</section>
+
+	<!--------- FORMULARIO PARA SER PROXIMO ORADOR ------------>
+	<div class="container mt-5">
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<form>
+					<div class="row mb-3">
+						<div class="col">
+							<input type="text" class="form-control" id="nombre" placeholder="Nombre">
+						</div>
+						<div class="col">
+							<input type="text" class="form-control" id="apellido" placeholder="Apellido">
+						</div>
+					</div>
+					<div class="mb-3">
+						<textarea class="form-control" id="mensaje" rows="6" placeholder="¿Sobre qué quieres hablar?"></textarea>
+					</div>
+					<p class="recuerdaTitulo">Recuerda incluir un título para tu charla</p>
+					<button type="submit" class="btn custom-btn-green col-auto w-100">Enviar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!---------- las cajas de opciones y el copying --------->
+	<footer>
+		<div class="footer-boxes">
+			<div class="footer-box" id="preg-frec-box" title="Carga las preguntas mas frecuentes">Preguntas frecuentes</div>
+			<div class="footer-box" id="contactanos-box" title="Muestra datos de Contacto">Contáctanos</div>
+			<div class="footer-box" id="prensa-box" title="Datos de Prensa y Difusión">Prensa</div>
+			<div class="footer-box" id="conferencia-box" title="Muestra datos de la Conferencia">Conferencias</div>
+			<div class="footer-box" id="term-cond-box" title="Muestra los Términos y Condiciones">Términos y condiciones</div>
+			<div class="footer-box" id="privacidad-box" title="Datos de Copying y Privacidad">Privacidad</div>
+			<div class="footer-box" id="estudiantes-box" title="Nombre de los estudiantes de Codo a Codo">Estudiantes</div>
+		</div>
+		<p class="copying">&copy; 2023 Conferencia Bs As - Todos los derechos reservados.</p>
+	</footer>
+</body>
+</html>
