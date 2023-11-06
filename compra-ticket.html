@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles-compras.css"> <!-- Asegúrate de vincular tu archivo CSS -->
+    <link rel="stylesheet" href="./css/styles-compras.css">
     <link rel="shortcut icon" type="Imagen" href="./img/ticket.png">
     <title>Venta de Tickets</title>
 </head>
@@ -61,7 +61,7 @@
             <div class="form-row">
                 <div class="form-group">
                     <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" placeholder="Cantidad">
+                    <input type="number" id="cantidad" placeholder="Cantidad" min="1" step="1">
                 </div>
                 <div class="form-group">
                     <label for="categoria">Categoría:</label>
@@ -72,21 +72,26 @@
                     </select>
                 </div>
             </div>
+            
             <div class="form-row">
-                <div class="form-group form-group-total">
+                <div class="form-group">
+                    <label for="text-total"></label>
+                    <input type="text" id="text-total" placeholder="Total a Pagar: $" disabled>
+                </div>
+                <div class="form-group">
                     <label for="total"></label>
-                    <input type="text" id="total" placeholder="Total a Pagar: $" disabled>
+                    <input type="number" id="total" placeholder="0" disabled>
                     <!-- <input type="text" id="total" placeholder="Total a pagar: $" disabled style="background-color: #bcebf1; color: #000080; border: none; height: 46px; font-size: 18px; padding-left: 14px;"> -->
                 </div>
             </div>
+          
             <div class="form-row form-group-buttons">
                 <button type="submit" class="btn btn-success">Borrar</button>
-                <button type="reset" class="btn btn-success">Resumen</button>
+                <button type="reset" class="btn btn-success">Grabar</button>
             </div>
         </form>
     </div>
 
     <script src="./js/venta-ticket.js"></script> <!-- Agrego esta línea que llama al codigo js-->
 </body>
-
 </html>

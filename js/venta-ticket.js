@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Obtén los elementos del DOM necesarios
-    const categoriaSelect = document.getElementById('categoria');
-    const cantidadInput = document.getElementById('cantidad');
-    const nombreInput = document.getElementById('nombre');
     const apellidoInput = document.getElementById('apellido');
+    const nombreInput = document.getElementById('nombre');
     const correoInput = document.getElementById('correo');
+    const cantidadInput = document.getElementById('cantidad');
+    const categoriaSelect = document.getElementById('categoria');
     const totalInput = document.getElementById('total');
 
     // Valor base del ticket
@@ -49,7 +49,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const precioFinal = cantidad * (precioBase - (precioBase * descuento));
 
         // Actualiza el valor en el campo "Total a Pagar"
-        totalInput.value = `$${precioFinal.toFixed(2)}`;
+        // totalInput.value = `$${precioFinal.toFixed(2)}`;
+        totalInput.value = precioFinal.toFixed(2);
     }
 
     // Asocia eventos "input" a los campos para realizar validaciones en tiempo real

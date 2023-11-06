@@ -1,75 +1,67 @@
 /* Estilos generales */
 body {
-   /* font-family: Arial, sans-serif;*/
+    /* font-family: Arial, sans-serif;*/
     margin: 0;
     padding: 0;
 }
 
 .container {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     padding: 20px 20px 10px 20px;
 }
 
 .box {
-    /*background-color: #f1f1f1; */
     text-align: center;
     padding: 20px;
-    /*border-radius: 10px; */
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
     border: solid 2px;
     margin: 0 4px;
 }
 
-/* Colores de borde diferentes para cada caja */
 .box1 {
-    border-color:  #509def; /* Borde azul */
+    border-color: #509def;
 }
 
 .box2 {
-    border-color: #3bb0c3; /* Borde rojo */
+    border-color: #3bb0c3;
 }
 
 .box3 {
-    border-color: #fec008; /* Borde verde */
+    border-color: #fec008;
 }
 
 .texto-des {
     font-size: 20px;
 }
+
 .texto-doc {
     opacity: 0.6;
 }
 
-/* Texto de venta y valor del ticket */
 #venta {
     margin: 0;
     padding: 0;
 }
+
 .texto-venta {
     text-align: center;
     font-size: 19px;
     padding: 0px;
     margin: 0px;
-    /* background-color: #fec008; */
 }
 
 .texto-valor {
     text-align: center;
     font-size: 40px;
     margin: 0px;
-    /*padding: 6px 0px;*/
     font-weight: 500;
-    /*background-color: blueviolet;*/
 }
 
-/* ********Formulario********** */
-/* Estilos CSS personalizados */
+/* Estilos CSS personalizados para el formulario */
 .form-container {
     max-width: 700px;
     margin: 0 auto;
-    /*padding: 20px;*/
 }
 
 .form-row {
@@ -107,22 +99,54 @@ body {
 }
 
 .form-group select {
-    padding: 7px; /* Ajusta el valor según tus necesidades */
+    padding: 7px;
 }
 
 .form-group-total {
     flex: 2;
 }
 
-/* Estilo para el campo "TOTAL" */
+/*
+/* Estilo para el campo "TEXT-TOTAL" y "TOTAL"
+#text-total, #total {
+    background-color: #bcd7f1;
+    color: #01017a;
+    border: none;
+    height: 48px;
+    font-size: 18px;
+    padding-left: 16px;
+    width: 100%; /* Cambiamos el ancho para que ocupen todo el espacio disponible 
+    border-radius: 5px;
+} */
+
+
+/* Estilo para el campo "TEXT-TOTAL" */
+#text-total {
+    background-color: #bcd7f1;
+    color: #01017a;
+    border: none;
+    height: 48px;
+    font-size: 18px;
+    padding-left: 16px;
+    width: 44%;
+    /*margin-right: 10px;*/
+    border-radius: 5px;
+}
+
+#text-total::placeholder {
+    color: #01017a;
+}
+
+/*Estilo para el campo "TOTAL" */
 #total {
-    background-color: #bcd7f1; /* Color de fondo celeste clarito */
-    color: #01017a; /* Color del texto azul oscuro */
-    border: none; /* Eliminar el borde */
-    height: 48px;        /*
-    font-size: 18px;     /* Tamaño de la fuente de "Total a Pagar" */
-    padding-left: 16px;   /* espacion entre el borde y donde comienza "Total a Pagar" */
-    margin-bottom: 18px; /* Espacio entre el campo total y los botones */
+    background-color: #bcd7f1;
+    color: #01017a;
+    border: none;
+    height: 48px;
+    font-size: 18px;
+    padding-left: 16px;
+    width: 164%;
+    margin: 0% 0% 0% -64%;
     border-radius: 5px;
 }
 
@@ -131,6 +155,7 @@ body {
     color: #01017a;
 }
 
+/* Estilo para los botones */
 .form-group-buttons {
     display: flex;
     justify-content: space-between;
@@ -139,10 +164,10 @@ body {
 .btn {
     background-color: #96c93d;
     color: white;
-    padding: 10px 0; /* Modificación del ancho de los botones */
+    padding: 10px 0;
     border: none;
     cursor: pointer;
-    width: 49%; /* Modificado para separar los botones */
+    width: 49%;
 }
 
 .btn-success {
@@ -153,15 +178,13 @@ body {
     opacity: 0.8;
 }
 
-
-/* *****Estilos para diferentes tamaños de pantalla***** */
+/* Estilos para diferentes tamaños de pantalla */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
     }
-    
+
     .box {
         width: 100%;
     }
 }
-
