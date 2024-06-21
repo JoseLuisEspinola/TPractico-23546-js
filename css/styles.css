@@ -365,11 +365,12 @@ form .recuerdaTitulo  {
     background-color: #1E4258;
     color: grey;
     text-align: center;
-    padding: 6px 0;
+    padding: 6px 0 20px;
+    margin: 0;
    /* animation: desplazamientoDerecha 18s ease-in-out 0.5s infinite; /* Configuracion de la animación */
 }
 
-/* Query media */
+/* ***** Media Query **** */
 /* Para pantallas maximo de 1368 pixel */
 @media (max-width: 1368px) {
     header ul li a {
