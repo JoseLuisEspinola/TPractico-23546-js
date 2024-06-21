@@ -370,7 +370,7 @@ form .recuerdaTitulo  {
    /* animation: desplazamientoDerecha 18s ease-in-out 0.5s infinite; /* Configuracion de la animación */
 }
 
-/* Query media */
+/* ***** Media Query **** */
 /* Para pantallas maximo de 1368 pixel */
 @media (max-width: 1368px) {
     header ul li a {
